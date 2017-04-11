@@ -161,7 +161,8 @@ class MainFrame extends JFrame {
 			Account acc = myServer.getAccount(name);
 			if (acc != null && acc.deposit(Float.parseFloat(balance))) {
 				JOptionPane.showMessageDialog(null, "Deposit successful");
-			} else {
+			} 
+			else {
 				JOptionPane.showMessageDialog(null, "Deposit unsuccessful");
 			}		
 		}
